@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
 
 android {
     compileSdkVersion 24
@@ -26,7 +27,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.believe777'
                 artifactId = 'believe777'  
-                version = '1.0.3'
+                version = '1.0.4'
             }
         }
     }
