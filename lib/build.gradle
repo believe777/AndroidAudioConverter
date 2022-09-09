@@ -19,6 +19,20 @@ android {
     }
 }
 
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.believe777'
+                artifactId = 'believe777'  
+                version = '1.0.3'
+            }
+        }
+    }
+}
+
+
 dependencies {
     compile 'com.github.WritingMinds:ffmpeg-android-java:v0.3.2'
 }
